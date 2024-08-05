@@ -529,7 +529,7 @@ header {
     letter-spacing: 0.02em;
     display: flex;
     justify-content: center; 
-    padding-right: 32px;
+    padding: 40px 32px;
     color:#f4f4fd;
     background-color: #4d5ae5; 
     width: 100%;
