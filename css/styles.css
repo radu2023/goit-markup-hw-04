@@ -590,8 +590,12 @@ header {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: baseline;
+}
+
+.footer-logo-container {
     margin-right: 120px;
 }
+
 
 .footer-logo {
     display: inline-block; 
