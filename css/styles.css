@@ -493,7 +493,7 @@ header {
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 } 
 
 .team-card:hover,
@@ -507,14 +507,14 @@ header {
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 } 
 
 .image-portfolio {
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
 
 .overlay {
     position: absolute;
@@ -522,13 +522,13 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 0000ff;
+    /* background: 0000ff;
     opacity: 0; 
     display: flex;
     align-items: center;
     justify-content: center;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(100%);
+    transform: translateY(100%); */
   }
 
   .overlay-paragraph {
@@ -544,11 +544,12 @@ header {
     letter-spacing: 0.02em;
     text-align: left;
     opacity: 0; 
+    transform: translateY(100%);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
    
-  .team-card:hover .image-portfolio {
+  /* .team-card:hover .image-portfolio {
     opacity: 0; 
   }
   
@@ -556,10 +557,11 @@ header {
     opacity: 1; 
     background: var(--pressed-color-header);
     transform: translateY(0%); 
-  }
+  } */
 
   .team-card:hover .overlay-paragraph {
-    opacity: 1; 
+    /* opacity: 1;  */
+    transform: translateY(0%);
   }
 
 .first-section-subtitle {
@@ -578,11 +580,18 @@ header {
 .footer-menu {
     background-color: var(--primary-color); 
     padding: 100px 0;
-    position: relative;
     position: relative; 
-  box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
 }
 
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: baseline;
+    margin-right: 120px;
+}
 
 .footer-logo {
     display: inline-block; 
@@ -623,10 +632,11 @@ header {
 .footer-social-text {
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5px;
     letter-spacing: 0.02em;
     text-align: left;
     color: white;
+    margin-bottom: 16px;
 } 
 
 .footer-social-link-box {
@@ -650,13 +660,28 @@ header {
     justify-content: center;
     width: 40px; 
     height: 40px; 
+   
     border-radius: 50%; 
     background-color: #4D5AE5; 
     text-decoration: none; 
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
+/* .footer-social-icon {
+    
+} */
 
-.footer-social-link svg {
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: #31d0aa;
+}
+
+.footer-social-icon {
+    fill: #f4f4fd;
+}
+
+
+/* .footer-social-link svg {
     fill: #FFFFFF;
-} 
+}  */
