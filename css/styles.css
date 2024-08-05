@@ -399,7 +399,7 @@ header {
 .social-list-container {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
     list-style: none;
     padding: 0;
     margin-top: 8px; 
