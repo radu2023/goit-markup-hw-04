@@ -312,6 +312,8 @@ header {
 .second-section {
     background-color: var(--cloud-white-color);
     padding: 120px 0;
+    margin: 0 auto; 
+    box-sizing: border-box;
 } 
 
 .section-title {
@@ -324,10 +326,6 @@ header {
     color: var(--primary-color);
 } 
 
-.team-section {
-    margin: 0 auto; 
-    box-sizing: border-box;
-}
 
 .team-container {
     /* margin-top: 72px;  */
@@ -372,7 +370,7 @@ header {
     padding-bottom: 32px;
 }
 
-.text-box {
+/* .text-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -381,7 +379,7 @@ header {
     width: 100%;
     position: relative;
     text-align: center;
-}
+} */
 
 .second-section-subtitle {
     font-size: 20px;
